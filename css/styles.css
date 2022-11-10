@@ -367,14 +367,6 @@ img {
     border: 1px solid var(--image-border);
 }
 
-.ex-item:hover,
-.ex-item:focus{
-box-shadow: 
-0px 1px 1px rgba(0, 0, 0, 0.12), 
-0px 4px 4px rgba(0, 0, 0, 0.06), 
-1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .ex-item:nth-child(3n) {
     margin-right: 0;
 }
@@ -401,12 +393,30 @@ box-shadow:
     line-height: 1.88;
     margin-top: 0;
     margin-bottom: 0;
+    color: var(--primary-text-color);
+}
+
+.ex-link{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.ex-link:hover,
+.ex-link:focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .top-svg{
+    width: 270px;
+    height: 120px;
     background-color: var(--bg-svg-color);
-    padding: 25px 100px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mail-tel-svg{
@@ -542,4 +552,3 @@ gap: 70px;
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
