@@ -410,8 +410,6 @@ box-shadow:
 }
 
 .mail-tel-svg{
-    width: 20px;
-    height: 16px;
     fill: var(--primary-text-color);
     margin-right: 10px;
 }
@@ -429,16 +427,22 @@ box-shadow:
 
 
 .team-link{
-   display: inline-block;
    height: 44px;
    width: 44px;
    background-color: var(--primary-white-color);
    border-radius: 50%;
-   padding: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.team-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .team-svg{
-   background-position: center;
    fill: var(--link-color);
 }
 
@@ -457,3 +461,85 @@ box-shadow:
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
+.clients-svg{
+    fill: var(--link-color);
+}
+
+.clients-link{
+    border: 1px solid rgba(175, 177, 184, 1);
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.clients-svg:hover,
+.clients-svg:focus{
+    fill: var(--accent-color);
+}
+
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+    fill: var(--accent-color);
+}
+
+.clients-logos{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-title{
+text-decoration:none;
+font-style: normal;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-white-color);
+margin-bottom:20px;
+font-size: 14px;
+}
+
+.footer-poz{
+display: flex;
+align-items: baseline;
+gap: 70px;
+}
+
+.footer-link{
+   height: 44px;
+   width: 44px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-svg{
+   background-position: center;
+   fill: var(--primary-white-color);
+}
+
+.footer-svg:hover,
+.footer-svg:focus{
+    fill: var(--primary-white-color);
+}
+
+.footer-link:hover ,
+.footer-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-link:hover .team-svg,
+.footer-link:focus .team-svg{
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
